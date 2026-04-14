@@ -1,0 +1,36 @@
+# Rust
+/target
+**/*.rs.bk
+Cargo.lock
+
+# Generated UniFFI
+**/*.uniffi.rs
+
+# Swift
+swift/.build/
+swift/Packages/
+swift/*.xcworkspace
+swift/*.xcodeproj
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Build artifacts
+*.dylib
+*.so
+*.a
+*.lib

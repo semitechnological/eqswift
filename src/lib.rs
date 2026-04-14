@@ -200,6 +200,12 @@ uniffi::include_scaffolding!("eq_swift");
 
 pub struct EqSwift;
 
+impl Default for EqSwift {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 #[uniffi::export]
 impl EqSwift {
     #[uniffi::constructor]
