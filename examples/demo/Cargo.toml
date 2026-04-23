@@ -1,0 +1,11 @@
+[package]
+name = "eqswift-demo"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[dependencies]
+eqswift = { path = "../.." }

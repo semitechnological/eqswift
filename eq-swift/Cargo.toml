@@ -1,0 +1,25 @@
+[package]
+name = "eqswift"
+version = "0.1.1"
+edition = "2021"
+authors = ["eqswift contributors"]
+description = "Zero-config Rust-to-Swift FFI — no UDL, no build.rs, just annotations"
+license = "MIT"
+repository = "https://github.com/semitechnological/eqswift"
+keywords = ["ffi", "swift", "uniffi", "bindings", "ios"]
+categories = ["development-tools::ffi"]
+rust-version = "1.70"
+
+[lib]
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[[bin]]
+name = "uniffi-bindgen"
+path = "src/bin/uniffi-bindgen.rs"
+
+[dependencies]
+eqswift-macros = { version = "0.1.1", path = "../eqswift-macros" }
+uniffi = { version = "0.31", features = ["cli"] }
+
+[dev-dependencies]
+tempfile = "3.10"
