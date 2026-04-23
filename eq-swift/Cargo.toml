@@ -2,9 +2,9 @@
 name = "eqswift"
 version = "0.1.1"
 edition = "2021"
-authors = ["eqswift contributors"]
+authors = ["Max Carter <max@undivisible.dev>"]
 description = "Zero-config Rust-to-Swift FFI — no UDL, no build.rs, just annotations"
-license = "MIT"
+license = "MPL-2.0"
 repository = "https://github.com/semitechnological/eqswift"
 keywords = ["ffi", "swift", "uniffi", "bindings", "ios"]
 categories = ["development-tools::ffi"]
