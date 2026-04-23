@@ -1,10 +1,12 @@
 # Rust
 /target
 **/*.rs.bk
-Cargo.lock
 
-# Generated UniFFI
+# Generated UniFFI scaffolding (legacy)
 **/*.uniffi.rs
+
+# Generated Swift bindings (regenerated from Rust library)
+eq-swift/swift/Generated/
 
 # Swift
 swift/.build/
