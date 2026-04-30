@@ -1,5 +1,6 @@
 # Rust
 /target
+Cargo.lock
 **/*.rs.bk
 
 # Generated UniFFI scaffolding (legacy)
@@ -7,6 +8,10 @@
 
 # Generated Swift bindings (regenerated from Rust library)
 eq-swift/swift/Generated/
+swift/Generated/
+
+# All build targets (including workspace members)
+*/target/
 
 # Swift
 swift/.build/
@@ -30,9 +35,14 @@ DerivedData/
 .DS_Store
 .AppleDouble
 .LSOverride
+._*
 
 # Build artifacts
 *.dylib
 *.so
 *.a
 *.lib
+*.pdb
+
+# OS
+*.log
